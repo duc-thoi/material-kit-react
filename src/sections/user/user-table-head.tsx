@@ -33,6 +33,8 @@ export function UserTableHead({
       <TableRow>
         <TableCell padding="checkbox">
           <Checkbox
+            color="error"
+            sx={{ color: 'error.main' }}
             indeterminate={numSelected > 0 && numSelected < rowCount}
             checked={rowCount > 0 && numSelected === rowCount}
             onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
